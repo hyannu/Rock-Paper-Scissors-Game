@@ -9,13 +9,14 @@ const msg = document.querySelector("#msg");
     const options =["rock", "paper", "scissors"];
    const randIndx = Math.floor(Math.random()*3);
    return options[randIndx];
-   
  };
+
  const drawGame = () => {
     console.log("game was draw.");
      msg.innerText = "Game was Draw. Play again."; 
       msg.style.backgroundColor = "#081b31";
  };
+ 
  const showWinner = (userWin, userChoice, compChoice) => {
     if(userWin) {
         console.log("you win!");
